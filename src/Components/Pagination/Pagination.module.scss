@@ -1,0 +1,33 @@
+@import "../../Globals/Global.scss";
+.customPagination {
+    padding: 2.87rem 1.25rem 0rem 1.063rem;
+
+    .label {
+        color: #B5B7C0;
+        font-size: $font-16;
+        font-weight: $font-500;
+    }
+    .paginationButtonWrapper {
+        display: flex;
+        align-items: baseline;
+        width: 22%;
+        justify-content: space-between;
+        margin-bottom: 0.58rem;
+        button {
+            border-radius: 0.25rem;
+            border: 1px solid #EEE;
+            background: #F5F5F5;
+            display: inline-flex;
+            padding: 0.375rem 0.5625rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            color: #404B52;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../Globals/Global.scss";
+
+.info-wrapper {
+    @include flex-direction-column;
+    margin-bottom: 23px;
+    font-size: 0.875rem;
+    line-height: 25px;
+
+    .info-label {
+        color: #6E6E6E;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.24513rem;
+        text-transform: capitalize;
+        margin-bottom: 0.38rem;
+    }
+
+    .info-box {
+        border-radius: 0.3125rem;
+        border: 1px solid #6E6E6E;
+        background: #E1E1E1;
+        color: #000;
+        font-weight: 500;
+        padding: 1.19rem 0.94rem;
+        display: flex;
+        align-items: center;
+    }
+}

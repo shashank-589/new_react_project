@@ -1,0 +1,90 @@
+@import "../../Globals/Global.scss";
+
+.dropdown {
+  width: 20%;
+  margin-right: 5px;
+  padding: 0.94rem 0.31rem 1.12rem 3.69rem;
+
+  .dropdownBtn {
+    background: #356646;
+    position: relative;
+    border-color: #356646 !important;
+    border-radius: 0.3125rem;
+    background: #356646;
+    width: 11.32531rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.19rem 0.69rem;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    font-size: $font-14;
+    color: white;
+  }
+  .showDropdown:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 70px;
+    border-top: 12px solid black;
+    border-top-color: inherit;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .dropdownContent {
+    position: absolute;
+    width: 149px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0px 0px 5px 5px;
+    background-color: $white;
+    font-size: $font-14;
+    // color: black;
+    z-index: 1;
+    display: block;
+    margin-top: 13px;
+    border-radius: 0.3125rem;
+    background: #356646;
+    margin-left: 55px;
+    color: #FFF;
+    font-weight: 600;
+    .item {
+      text-align: center;
+      padding: 0.5rem;
+      cursor: pointer;
+      border-bottom: 1px solid white;
+      #datepicker-input {
+        display: none;
+        background: #356646;
+        padding: 0px;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        width: 90%;
+        font-size: $font-14;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.react-datepicker__day--selected {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: $primary-color;
+  color: #ffffff;
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: $primary-color;
+  color: #ffffff;
+}

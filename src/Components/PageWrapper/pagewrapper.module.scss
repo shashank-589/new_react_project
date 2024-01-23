@@ -1,0 +1,24 @@
+@import "../../Globals/Global.scss";
+
+.pageWrapperContainer {
+    background: $page-bg;
+
+    .pageContainer {
+        display: flex;
+
+        .sidebar {
+            flex-basis: 20%;
+        }
+
+        .pageContent {
+            padding: 20px;
+            flex-basis: 80%;
+        }
+
+        .outletContainer {
+            background-color: #F8F8F8;
+            padding: 1.25rem;
+            width: 80%;
+        }
+    }
+}

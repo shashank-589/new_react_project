@@ -1,0 +1,78 @@
+@import '../../Globals/Global.scss';
+
+.dropdown {
+    width: 20%;
+    margin-right: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 0.3125rem;
+    border: 1px solid #ddd;
+    .dropdownBtn {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.19rem 0.69rem;
+        font-weight: $font-500;
+        font-size: $font-16;
+        color: black;
+    }
+    .dropdownContent {
+        position: absolute;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0px 0px 5px 5px;
+        color: black;
+        z-index: 1;
+        .item {
+            padding: 5px 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            background-color: $white;
+            font-size: $font-16;
+        }
+    }
+    .dropdown-content:first-child {
+        border-top: none;
+    }
+    .dropdown-content .item:hover {
+        background: #fcfcfc;
+    }
+}
+
+@mixin icon-circle-with-triangle($diameter: 22px, $arrow-width: 5px, $color: #fff, $background: #000) {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: $diameter;
+    height: $diameter;
+    background: $primary-color;
+    border-radius: 50%;
+    transform: rotate(90deg);
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        border: $arrow-width solid transparent;
+        border-bottom: $arrow-width solid $color;
+        transform: translateX(-50%) translateY(-85%);
+    }
+}
+
+$circle-diameter: 50px;
+$circle-background: #000;
+$arrow-hypo: 10px;
+$arrow-color: yellow;
+
+.circle {
+    @include icon-circle-with-triangle();
+    .bottom {
+        transform: rotate(180deg);
+    }
+    .top {
+        transform: rotate(360deg);
+    }
+}

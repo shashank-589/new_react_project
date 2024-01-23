@@ -1,0 +1,27 @@
+@import "../../Globals/Global.scss";
+
+.customerPEndingDetailsWrapper {
+    .header {
+        @include flex-space-between;
+        padding: 1.81rem 1.11rem 0.91rem 1.91rem;
+        align-items: center;
+
+        .heading {
+            color: #000;
+            font-size: 1.74319rem;
+            font-weight: $font-500;
+            text-transform: uppercase;
+        }
+    }
+
+    .fieldWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        justify-content: space-between;
+        padding-bottom: 0;
+        padding: 1.063rem;
+
+    }
+}

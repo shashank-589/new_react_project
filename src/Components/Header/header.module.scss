@@ -1,0 +1,44 @@
+@import "../../Globals/Global.scss";
+
+.headerWrapper{
+    background-color: $primary-color;
+    height: 95px;
+    .headerInner{
+        display: flex;
+        justify-content: space-between;
+        .userBox{
+            display: flex;
+            height: 95px;
+            justify-content: center;
+            align-items: center;
+            padding-right: 18px;
+            p{
+                margin: 0;
+            }
+            .userInfo{
+                text-align: right;
+                .name{
+                    color: $white;
+                    font-family: $primary-font-family;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 19.922px; /* 99.609% */
+                    font-variant: all-small-caps;
+                }
+                .info{
+                    color: $dark-grey;
+                    font-family: $primary-font-family;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 19.922px; /* 166.016% */
+                    text-transform: lowercase;
+                }
+            }
+            .userAvtar{
+                margin: 0 12px;
+            }
+        }
+    }
+}

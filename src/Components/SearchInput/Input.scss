@@ -1,0 +1,18 @@
+@import '../../Globals/Global.scss';
+
+.search-input-wrapper {
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.37rem 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    color: #777;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: $font-14;
+    width: 30%;
+    margin-right: 5px;
+}
